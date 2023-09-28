@@ -1,0 +1,16 @@
+#exemplo{
+    width: 200px;
+    height: 200px;
+}
+
+.verde{
+    background-color: green;
+}
+
+.vermelho{
+    background-color: brown;
+}
+
+.azul{
+    background-color: blue;
+}

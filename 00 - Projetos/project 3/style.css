@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: #151515;
+}
+.three{
+    width: 100%;
+}
+
+h1{
+    cursor: pointer;
+    font-size: 50px;
+    color: aqua;
+    text-align: center;
+    margin-top: 50vh;
+    text-decoration: underline;
+}
+
+h1:hover{
+    transition: 2s;
+    animation-name: animacao;
+    animation-duration:;
+}
+
+@keyframes animacao{
+    body{
+        background-color: aqua;
+    }
+
+    h1{
+        color: #151515;
+    }
+}

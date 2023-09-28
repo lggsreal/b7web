@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Montserrat:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #24252a;
+    box-shadow: 0px 10px 10px #464646;
+}
+
+.nav-general{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
+.nav-bar h1{
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav-list li{
+    margin: 0 10px;
+    font-weight: 400;
+    font-size: 1.1rem;
+}  
+
+.login-botom a{
+    text-decoration: none;
+    display: block;
+}
+.menu-mobile{
+    display: none;
+}
+.menu-mobile button{
+    width: 10%;
+    padding: 2%;
+    background-color: #10a19e;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media (max-width: 760px){
+    .nav-list ul{
+        display: none;
+    }
+
+    .nav-general .login-botom{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        cursor: pointer;
+    }
+
+    .menu-mobile{
+        text-align: center;
+        font-size: 1.2rem;
+        background-color: #464646;
+    }
+    .menu-mobile li{
+        margin-top: 2%;
+    }
+    .menu-mobile a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-mobile button{
+        width: 30%;
+        max-width: 300px;
+        padding: 2%;
+        margin-top: 2%;
+    }
+
+    .open{
+        display: block;
+    }
+
+    
+
+}

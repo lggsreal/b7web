@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #DDD;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin-left: -2%;
+    margin-top: -1%;
+}
+
+div{
+    background-color: #F00;
+    margin: 2%;
+    padding: 2%;
+    font-size: 18px;
+    flex: 1;
+    width: 10%;
+}
+
+@media (max-width: 698px){
+    .container{
+        flex-direction: column;
+    }
+    
+    div{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 40px;
+    }
+}

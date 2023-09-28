@@ -1,0 +1,10 @@
+.text{
+    height: 300px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.allText{
+    width: 100px;
+    height: 100%;
+}

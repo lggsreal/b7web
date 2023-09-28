@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/*Estilização do header*/
+header{
+    background-color: rgba(20, 32, 59, 0.5); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.header-general{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.header-general .left{
+    flex: 1;
+}
+
+.header-general .right{
+    flex: 1.5;
+}
+
+.header-general .menu-mobile a{
+    display: block;
+    margin-bottom: 2%;
+}
+
+.header-general .right-mobile a{
+    display: block;
+}
+
+.header-general .logo-mobile{
+    display: none;
+}
+
+.header-general img{
+    width: 50px;
+}
+
+.header-general li{
+    display: inline;
+      
+}
+
+.header-general a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    transition: 2s;
+}
+
+.header-general a:hover{
+    color: #ffffff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff; 
+}
+
+
+.menuOne{
+   background-image: url('../assets/banner_bg.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 80vh;
+}
+
+.menu-mobile{
+    display: none;
+}
+.menuOne h1{
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 35vh;
+    color: #fff;
+    font-family: 'Blinker', sans-serif;
+}
+
+
+.messege-digit::after{
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: blinking .7s infinite;
+}
+
+
+/*SOBRE MIM*/
+.aboutMe{
+    background-color: rgb(20, 32, 59);
+    padding-bottom: 2%;
+}
+
+.aboutMe .aboutMeGrid{
+    display: grid;
+    grid-template-columns: 60% 40%
+}
+
+.aboutMeGrid .left{
+    width: 100%;
+}
+
+.aboutMeGrid .right{
+    width: 100%;
+}
+
+.aboutMe .right img{
+    margin-top: 10%;
+}
+
+.aboutMe .left h3{
+    font-size: 2.2rem;
+    color: #fff;
+    margin-top: 15%;
+}
+
+.aboutMe .left p{
+    color: #fff;
+    margin-top: 5%;
+    font-weight: normal;
+}
+
+.aboutMe .thumbnails{
+    margin-top: 5%;
+}
+
+.aboutMe .thumbnails img{
+    width: 20px;
+
+}
+
+.aboutMe .right img{
+    width: 100%;
+    max-width: 600px;
+    text-align: right;
+}
+
+@keyframes blinking {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 768px){
+    /*Estilização do header*/
+    .header-general .logo-mobile{
+        display: block;
+        cursor: pointer;
+    }
+
+    .header-general .left{
+        margin-top: 15px;
+    }
+
+    .header-general .right{
+        display: none;
+    }
+
+    .addMenu{
+        display: block;
+    }
+
+    .removeMenu{
+        display: none;
+    }
+
+    .menu-mobile a{
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+    }
+
+    .menu-mobile ul{
+        list-style: none;
+        text-align: center;
+    }
+
+    .menu-mobile li{
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .menu-mobile a:hover{
+        text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff;
+        transition: 1s; 
+    }
+
+
+    /*Estilização da sessão 1*/
+    .menuOne h1{
+        font-size: 2.0rem;
+    }
+
+    /*ESTILIZAÇÃO SOBRE MIM*/
+    .aboutMe .aboutMeGrid{
+        display: block;
+        text-align: center;
+    }
+
+    .aboutMe .left h3{
+        margin-top: 0;
+        padding-top: 5%;
+    }
+
+    .aboutMe .right img{
+        width: 100%;
+        max-width: 200px;
+        margin-top: 5%;
+    }
+    
+}

@@ -1,0 +1,11 @@
+.teste{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: blue;
+    transition: 3s;
+}
+
+.teste:hover{
+    width: 100%;
+}

@@ -1,0 +1,6 @@
+img{
+    height: 400px;
+    width: 400px;
+    /*Para ver o que como a imagem vai se comportar com o tamanho fixo:*/
+    object-fit: cover;
+}

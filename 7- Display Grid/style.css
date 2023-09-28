@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0% 2%;
+    margin: 0 auto;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.item{
+    width: 100%;
+    background-color: aquamarine;
+    margin: 1px;
+    padding: 5%;
+    border: 1px solid black;
+}
+
+.item2{
+    grid-column: span 2;
+    width: 100%;
+    background-color: aquamarine;
+    margin: 1px;
+    padding: 5%;
+    border: 1px solid black;
+}
+
+.item4{
+    grid-row: span 2;
+    width: 100%;
+    background-color: aquamarine;
+    margin: 1px;
+    padding: 5%;
+    border: 1px solid black;
+}

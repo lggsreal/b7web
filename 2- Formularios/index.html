@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Página teste</h1>
+    <form class="cadastro">
+        <h1>Área de cadastro</h1>
+        <label for="name">Nome completo:</label>
+        <input type="text" id="name" minlength="2" required><br>
+        <label>
+            Descrição
+            <textarea></textarea>
+        </label><br>
+        <label for="categoria">Categorias:</label>
+        <select name="opcaos" id="categoria" size="1" multiple>
+            <option>Categoria 1</option>
+            <option>Categoria 2</option>
+            <option>Categoria 3</option>
+            <option>Categoria 4</option>
+            <option>Categoria 5</option>
+        </select><br>
+        <input type="checkbox" id="termos" required> 
+        <label class="aceito" for="termos">Eu declaro que li e aceito os <a target="_blank" href="https://pensadorjuridico.jusbrasil.com.br/modelos-pecas/784909844/modelo-termos-e-condicoes-para-site-ou-app">termos de uso</a></label>
+        <input type="submit" value="Fazer cadastro">
+    </form><!--cadastro-->
+
+    <form class="login">
+        <h1>Área de Login</h1>
+    </form>
+</body>
+</html>

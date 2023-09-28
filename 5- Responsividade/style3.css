@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(000, 000, 000);
+}
+
+/*Quando a tela tiver até 600px, o css do site vai se comportar assim:*/
+@media (max-width: 600px){
+    body{
+        background-color: brown;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        background-color: cyan;
+    }
+}
+
+/*Media apenas para impressora*/
+@media only print{
+    
+}

@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px 30px 0px 30px;
+    border: 0;
+}
+
+label,
+textarea{
+    display: block;
+}
+
+input[type=submit]{
+    display: block;
+    margin-top: 20px;
+    padding: 6px 3px;
+}
+
+label{
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input,
+select{
+    margin-bottom: 16px;
+}
+
+input[type=checkbox]{
+    display: inline-block;
+}
+
+input[type=text]{
+    margin-top: 1px;
+    width: 500px;
+    padding: 0.8%;
+    font-size: 20px;
+    
+}
+
+.aceito{
+    display: inline-block;
+}
+
+textarea{
+    resize: none;
+    width: 500px;
+    height: 300px;
+    font-size: 16px;
+}
+
+select{
+    width: 500px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}

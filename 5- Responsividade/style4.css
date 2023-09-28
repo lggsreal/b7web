@@ -1,0 +1,16 @@
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    display: flex;
+}
+
+/*Media para sites na horizontal*/
+@media (orientation: landscape){
+    flex-direction: row;
+}
+
+/*media para se o site estiver na vertical*/
+@media (orientation: portrait){
+
+}
