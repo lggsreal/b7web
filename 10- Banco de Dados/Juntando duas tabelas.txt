@@ -1,0 +1,16 @@
+Subquery - informação de outra tabela:
+
+SELECT *,
+	(SELECT fornecedores.nome FROM fornecedores WHERE fornecedores.id = produtos.id_fornecedor LIMIT 1) AS nome_fornecedor
+FROM produtos;
+
+
+
+
+Join - Informação de outra tabela:
+SELECT  
+	produtos.*, fornecedores.nome AS fornecedor
+FROM produtos 
+INNER JOIN fornecedores ON fornecedores.id = produtos.id_fornecedor; 
+
+
