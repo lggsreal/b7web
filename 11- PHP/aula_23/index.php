@@ -1,5 +1,5 @@
 <?php
-//Uma classe que serve apenas para ser herdada e não instanciada
+//Uma classe que serve apenas para ser herdada e não istanciada
     abstract class Test{
         public function callingFunction(){
             echo "Estou chamando a minha função";
@@ -27,3 +27,25 @@
 
     $filho = new Filho;
     $filho->heyBrother();
+
+//Método estático
+    class Animals{
+        public static function showLion(){
+            echo "This is a Lion";
+            echo "<br/>";
+        }
+
+        public function showCat(){
+            echo "Hi, this is a cat!";
+            echo "<br/>";
+            self::showLion();
+            echo "<br/>";
+        }
+    }
+
+    Animals::showLion();
+    $animals = new Animals;
+    $animals->showCat();
+
+
+
