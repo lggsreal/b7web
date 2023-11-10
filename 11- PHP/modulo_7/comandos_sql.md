@@ -55,3 +55,7 @@ $sql->prepare("SELECT * FROM `clientes` ORDER BY nome asc);
 Ex prático:
   $sql = $pdo->prepare("SELECT * FROM `clientes` LEFT JOIN cargos ON `clientes` . `cargo` = `cargos` . `id`");
   $sql->execute();
+
+
+\\BETWEEN AND IN (BETWWN + PRA DATA):
+$pdo->prepare("SELECT * FROM clientes WHERE data BETWEEN '2022-01-01' AND '2021-01-02'");
