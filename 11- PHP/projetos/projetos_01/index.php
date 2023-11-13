@@ -22,7 +22,7 @@
                     </ul>   
                 </div><!--menuDesktop-->
                 <div class="menuMobileIcon">
-                     <img src="script/menu.png" alt="Menu">
+                     <img src="script/menu.png" alt="Menu" class="icon_menu">
                 </div><!--menuMobile-->
             </div><!--header-flex-->
                 <div class="menuMobile hidden">
@@ -44,7 +44,7 @@
                     <form action="" method="POST">
                         <h2>Coloque aqui o seu melhor e-mail!</h2>
                         <input type="email" name="email">
-                        <input type="submit" name="acao" value="Cadastre-se!">
+                        <input type="submit" class="botton" name="acao" value="Cadastre-se!">
                     </form>
             </div><!--bannerPrincialFlex-->
         </div><!--container-->
@@ -79,21 +79,27 @@
         <div class="container">
             <div class="habilidadesFlex">
                 <div class="boxHabilidades">
+                    <div class="img">
                         <img src="images/icons/html.png" alt="HTML5">
+                    </div><!--img-->     
                         <h3>HTML5</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra luctus feugiat. 
                             Vivamus malesuada ante convallis faucibus ultricies.</p>
                 </div><!--boxHabilidades-->
 
-                <div class="boxHabilidades">
-                        <img src="images/icons/css.png" alt="CSS3">
+                <div class="boxHabilidades whitebg">
+                        <div class="img">
+                            <img src="images/icons/css.png" alt="HTML5">
+                        </div><!--img-->     
                         <h3>CSS3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra luctus feugiat. 
                             Vivamus malesuada ante convallis faucibus ultricies.</p>
                 </div><!--boxHabilidades-->
 
                 <div class="boxHabilidades">
-                        <img src="images/icons/javascript.png" alt="JavaScript">
+                        <div class="img">
+                            <img src="images/icons/javascript.png" alt="HTML5">
+                        </div><!--img-->    
                         <h3>Javascript</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra luctus feugiat. 
                             Vivamus malesuada ante convallis faucibus ultricies.</p>
@@ -102,4 +108,5 @@
         </div><!--container-->
     </section><!--habilidades-->
 </body>
+<script src="script/script.js"></script>
 </html>

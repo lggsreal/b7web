@@ -19,18 +19,18 @@
     display: none;
 }
 
-.active{
-    display: block;
-}
-
 /* HEADER */
 header .menuMobileIcon{
     display: none;
 }
 
 header{
-    background-color: #0e6e9e;
+    background-color: rgba(14, 110, 158, 0.9);
     padding: 1% 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header .headerFlex{
@@ -64,15 +64,163 @@ header .menuDesktop li{
 header a{
     text-decoration: none;
     color: #fff;
+    transition: 1s;
+}
+
+header a:hover{
+    color: #ffffff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff; 
+}
+
+/* Banner Principal */
+.bannerPrincipal{
+    background-image: url('../images/banner_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+}
+
+.bannerPrincipal h2{
+    text-align: center;
+    padding-top: 40vh;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.bannerPrincipal input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 500px;
+    max-width: 80%;
+    height: 50px;
+    text-align: center;
+}
+
+.bannerPrincipal .input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.bannerPrincipal .botton{
+    background-color: #67f22c;
+    font-size: 1.4rem;
+    border: 0;
+    cursor: pointer;
+}
+
+/* AUTOR */
+.autor{
+    background-color: #ddd;
+}
+.autor .autorFlex{
+    display: flex;
+}
+
+.autor .boxTextAutor{
+    flex: 2;
+}
+
+.autor .boxTextAutor h3{
+   padding-top: 5%;
+}
+
+.autor p{
+    margin-top: 2%;
+}
+.autor .imgAutor{
+    flex: 1;
+}
+
+.imgAutor img{
+    width: 300px;
+    max-width: 100%;
+    padding: 5%;
+    border-radius: 50%;
+}
+
+/* HABILIDADES */
+.habilidades .habilidadesFlex{
+    display: flex;
+}
+
+.habilidades{
+    background-color: #bbb;
+} 
+
+.habilidades .boxHabilidades{
+    padding: 2%;
+}
+
+.habilidades h3{
+    text-align: center;
+}
+.habilidades .img{
+    text-align: center;
+}
+.habilidades p{
+    text-align: justify;
 }
 
 
+
 @media screen and (max-width: 768px) {
+    .container{
+        max-width: 600px;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    /*HEADER*/
+    header{
+        padding: 3%;
+    }
+
     header .menuMobileIcon{
+        display: block;
+        cursor: pointer;
+    }
+
+
+    header .menuDesktop{
+        display: none;
+    }
+
+    .active{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    .menuMobile ul{
+        display: block;
+        text-align: center;
+    }
+
+    .menuMobile li{
+        padding-bottom: 1%;
+    }
+
+    /*AUTOR */
+    .autor .autorFlex{
+        display: block;
+        text-align: center;
+    }
+
+    /* HABILIDADES */
+    .habilidades .habilidadesFlex{
         display: block;
     }
 
-    header .menuDesktop{
+}
+
+
+@media screen and (min-width: 768px){
+    header .menuMobile{
         display: none;
     }
 }
