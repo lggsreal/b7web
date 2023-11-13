@@ -1,62 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+/* CONFIGURAÇOES GERAIS */
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .container{
     max-width: 1200px;
-    padding: 0 2%;
     margin: 0 auto;
+    padding: 0 2%;
 }
 
-.w50{
-    width: 50%;
-}
-
-.w33{
-    width: 33.3%;
-}
-
-.clear{
-    clear:both;
-}
-
-.left{
-    float: left;
-}
-
-.right{
-    float: right;
-}
-
-header{
-    background-color: #3D437A;
-    padding: 2% 0;
-
-}
-header .logo{
-    
-    color: #fff;
-}
-
-.menuMobileIcon{
-    display: none;
-    cursor: pointer;
-    
-}
-
-.menuMobileIcon img{
-    width: 35px;
-}
-
-.menuDesktop ul{
-    list-style: none;   
-}
-
+/* SCRIPT */
 .hidden{
     display: none;
 }
@@ -65,79 +23,56 @@ header .logo{
     display: block;
 }
 
-.menuDesktop li{
-    display: inline-block;
-    font-size: 15px;
-    padding: 0 15px;
+/* HEADER */
+header .menuMobileIcon{
+    display: none;
 }
 
-.menuDesktop a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+header{
+    background-color: #0e6e9e;
+    padding: 1% 0;
 }
 
-section.bannerPrincipal{
-    background-image: url('../images/banner_bg.png');
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.bannerPrincipal form{
-    text-align: center;
-}
-
-.bannerPrincipal h2{
-    padding-top: 20vh;
-    color: #fff;
-    font-size: 32px;
-}
-
-.bannerPrincipal input{
-    width: 75vh;
-    max-width: 500px;
-    padding: 1%;
-    margin: 0 auto;
-    margin-top: 2%;
-    display: block;
-
-}
-
-.bannerPrincipal .btn{
-    cursor: pointer;
-    font-size: 24px;
-    background-color: #88e067;
-    border: none;
+header .headerFlex{
+    display: flex;
     
 }
+
+header .logo{
+    color: #fff;
+    flex: 70%;
+}
+
+header .logo{
+    font-size: 20px;
+}
+header .menuDesktop{
+    flex: 30%;
+    text-align: right;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header .menuDesktop li{
+    padding-left: 2%;
+    font-size: 14px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
 
 @media screen and (max-width: 768px) {
-    .menuDesktop{
-        display: none;
-    }
-
-    .menuMobileIcon{
+    header .menuMobileIcon{
         display: block;
     }
 
-    .hidden{
+    header .menuDesktop{
         display: none;
-    }
-    
-    .active{
-        display: block;
-    }
-
-    .menuMobile li{
-        font-size: 18px;
-        padding: 0 15px;
-        text-align: center;
-    }
-    
-    .menuMobile a{
-        color: rgb(255, 255, 255);
-        text-decoration: none;
     }
 }
