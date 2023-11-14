@@ -1,9 +1,10 @@
+<?php include('config.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo INCLUDE_PATH?>css/style.css" rel="stylesheet">
     <title>Projeto 01</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
                     <form action="" method="POST">
                         <h2>Coloque aqui o seu melhor e-mail!</h2>
                         <input type="email" name="email">
-                        <input type="submit" class="botton" name="acao" value="Cadastre-se!">
+                        <input type="submit" class="botton" name="acaoOne" value="Cadastre-se!">
                     </form>
             </div><!--bannerPrincialFlex-->
         </div><!--container-->
@@ -107,6 +108,26 @@
             </div><!--habilidadesFlex-->
         </div><!--container-->
     </section><!--habilidades-->
+
+    <section class="faleConosco">
+        <div class="container">
+            <div class="faleConoscoFlex">
+                <form action="" method="POST">
+                    <input type="text" placeholder="Nome" name="nome" required>
+                    <input type="email" placeholder="Seu e-mail aqui" name="email" required>
+                    <input type="tel" placeholder="Telefone para contato" name="tel" required>
+                    <input type="submit" name="acaoTwo" value="Enviar!" class="botton">
+                </form>
+            </div><!--faleConoscoFlex-->    
+        </div><!--container-->
+    </section><!--faleConosco-->
+    
+    <footer>
+        <div class="container">
+            <p>Todos os direitos reservados</p>
+        </div><!--container-->    
+    </footer>
 </body>
 <script src="script/script.js"></script>
+<script src="jquery.js"></script>
 </html>

@@ -99,6 +99,7 @@ header a:hover{
     max-width: 80%;
     height: 50px;
     text-align: center;
+    font-size: 1.4rem;
 }
 
 .bannerPrincipal .input:focus{
@@ -166,6 +167,49 @@ header a:hover{
     text-align: justify;
 }
 
+/* faleConosoco */
+.faleConosco{
+    background-image: url('../images/formBg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faleConosco .faleConoscoFlex{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.faleConosco input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 500px;
+    max-width: 80%;
+    height: 40px;
+    text-align: center;
+    font-size: 1.0rem;
+    border: 0;
+    color: #000;
+}
+
+.faleConosco .botton{
+    background-color: #67f22c;
+    font-size: 1.0rem;
+    border: 0;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgba(14, 110, 158);
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    padding: 2%;
+}
 
 
 @media screen and (max-width: 768px) {
