@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?php echo INCLUDE_PATH?>css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Projeto 01</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
                         <li><a href="">Início</a></li>
                         <li><a href="">Autor</a></li>
                         <li><a href="">Habilidades</a></li>
-                        <li><a href="">Fale Conosco</a></li> 
+                        <li><a href="#contato">Fale Conosco</a></li> 
                     </ul>   
                 </div><!--menuDesktop-->
                 <div class="menuMobileIcon">
@@ -43,9 +43,9 @@
         <div class="container">
             <div class="bannerPrincipalFlex">
                     <form action="" method="POST">
-                        <h2>Coloque aqui o seu melhor e-mail!</h2>
-                        <input type="email" name="email">
-                        <input type="submit" class="botton" name="acaoOne" value="Cadastre-se!">
+                        <h2>Melhores sistemas para as melhores empresas!</h2>
+      
+                        <a href="#contato"><input type="submit" class="bottonBestEmail" name="acaoOne" value="Entre em contato!"></a>
                     </form>
             </div><!--bannerPrincialFlex-->
         </div><!--container-->
@@ -109,12 +109,12 @@
         </div><!--container-->
     </section><!--habilidades-->
 
-    <section class="faleConosco">
+    <section class="faleConosco" id="contato">
         <div class="container">
             <div class="faleConoscoFlex">
                 <form action="" method="POST">
                     <input type="text" placeholder="Nome" name="nome" required>
-                    <input type="email" placeholder="Seu e-mail aqui" name="email" required>
+                    <input type="email" placeholder="Seu e-mail aqui" name="email" class="emailForm2"  required>
                     <input type="tel" placeholder="Telefone para contato" name="tel" required>
                     <input type="submit" name="acaoTwo" value="Enviar!" class="botton">
                 </form>

@@ -16,4 +16,13 @@ mobileIcon.addEventListener('click', ()=>{
     }
 });
 
+//Email:
+var melhorEmail = document.querySelector('.melhorEmail');
+var bottonBestEmail = document.querySelector('.bottonBestEmail');
 
+bottonBestEmail.addEventListener('click', () =>{
+    var emailForm2 = document.querySelector('.emailForm2');
+
+    var infoEmail = melhorEmail.value;
+    emailForm2.value = "test@123";
+})
