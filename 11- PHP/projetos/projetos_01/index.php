@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="<?php echo INCLUDE_PATH;?>css/style.css" rel="stylesheet">
     <title>Projeto 01</title>
 </head>
 <body>
@@ -23,7 +23,7 @@
                     </ul>   
                 </div><!--menuDesktop-->
                 <div class="menuMobileIcon">
-                     <img src="script/menu.png" alt="Menu" class="icon_menu">
+                     <img src="<?php echo INCLUDE_PATH;?>script/menu.png" alt="Menu" class="icon_menu">
                 </div><!--menuMobile-->
             </div><!--header-flex-->
                 <div class="menuMobile hidden">
@@ -37,14 +37,13 @@
         </div><!--container-->
     </header>
 
-
     <!--BANNER PRINCIPAL-->
     <section class="bannerPrincipal">
         <div class="container">
             <div class="bannerPrincipalFlex">
                     <form action="" method="POST">
                         <h2>Melhores sistemas para as melhores empresas!</h2>
-      
+                        
                         <a href="#contato"><input type="submit" class="bottonBestEmail" name="acaoOne" value="Entre em contato!"></a>
                     </form>
             </div><!--bannerPrincialFlex-->
@@ -70,7 +69,7 @@
                         euismod ut risus. Aenean aliquet nulla justo, ac dictum </p>
                 </div><!--boxTextAutor-->
                 <div class="imgAutor">
-                        <img src="images/Perfil.PNG" alt="Autor || Luiz Gustavo Gomes">
+                        <img src="<?php echo INCLUDE_PATH;?>images/Perfil.PNG" alt="Autor || Luiz Gustavo Gomes">
                 </div><!--imgAutor-->
             </div><!--autorFlex-->
         </div><!--container-->
@@ -81,7 +80,7 @@
             <div class="habilidadesFlex">
                 <div class="boxHabilidades">
                     <div class="img">
-                        <img src="images/icons/html.png" alt="HTML5">
+                        <img src="<?php echo INCLUDE_PATH;?>images/icons/html.png" alt="HTML5">
                     </div><!--img-->     
                         <h3>HTML5</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra luctus feugiat. 
@@ -90,7 +89,7 @@
 
                 <div class="boxHabilidades whitebg">
                         <div class="img">
-                            <img src="images/icons/css.png" alt="HTML5">
+                            <img src="<?php echo INCLUDE_PATH;?>images/icons/css.png" alt="HTML5">
                         </div><!--img-->     
                         <h3>CSS3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra luctus feugiat. 
@@ -99,7 +98,7 @@
 
                 <div class="boxHabilidades">
                         <div class="img">
-                            <img src="images/icons/javascript.png" alt="HTML5">
+                            <img src="<?php echo INCLUDE_PATH;?>images/icons/javascript.png" alt="HTML5">
                         </div><!--img-->    
                         <h3>Javascript</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra luctus feugiat. 
@@ -128,6 +127,5 @@
         </div><!--container-->    
     </footer>
 </body>
-<script src="script/script.js"></script>
-<script src="jquery.js"></script>
+<script src="<?php echo INCLUDE_PATH;?>script/script.js"></script>
 </html>
