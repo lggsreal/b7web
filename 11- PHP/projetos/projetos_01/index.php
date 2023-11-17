@@ -128,4 +128,8 @@
     </footer>
 </body>
 <script src="<?php echo INCLUDE_PATH;?>script/script.js"></script>
+<?php
+    include('classes/email.php');
+    include('backend/sendToBd.php');
+?>
 </html>
